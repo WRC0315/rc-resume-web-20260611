@@ -2303,10 +2303,11 @@ input, select, textarea {
 	#main > .panel.intro {
 		background: #fffaf1;
 		height: 24em;
+		position: relative;
 	}
 
 	#main > .panel.intro header {
-		padding: 3em;
+		padding: 3em 18em 3em 3em;
 	}
 
 	#main > .panel.intro header p {
@@ -2317,22 +2318,35 @@ input, select, textarea {
 	}
 
 	#main > .panel.intro .pic {
-		width: 20em;
+		background: radial-gradient(circle at 58% 42%, rgba(255, 250, 241, 0.98), rgba(239, 225, 207, 0.78) 58%, rgba(36, 26, 20, 0.1));
+		border-radius: 0 0.4em 0 999px;
+		height: 14.5em;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 14.5em;
+		z-index: 2;
 	}
 
 	#main > .panel.intro .pic:before {
-		background: radial-gradient(circle at 50% 52%, rgba(255, 250, 241, 0.96), rgba(239, 225, 207, 0.7) 58%, rgba(36, 26, 20, 0.12));
+		display: none;
 	}
 
 	#main > .panel.intro .pic img {
-		background: #efe1cf;
+		background: transparent;
 		object-fit: contain;
-		padding: 1.4em;
+		padding: 1em 0.85em 0.6em 1.2em;
 	}
 
 	#main > .panel.intro .pic .arrow {
 		background: #9a6a2f;
 		color: #fffaf1;
+		font-size: 0.95em;
+		right: 0.8em;
+		top: auto;
+		bottom: 0.8em;
+		margin-top: 0;
 	}
 
 	.resume-tags {
@@ -2529,16 +2543,17 @@ input, select, textarea {
 
 		#main > .panel.intro {
 			height: auto;
+			min-height: 21em;
 		}
 
 		#main > .panel.intro header {
-			padding: 3em 2em;
+			padding: 3em 12em 3em 2em;
 			text-align: left;
 		}
 
 		#main > .panel.intro .pic {
-			height: 22em;
-			width: 100%;
+			height: 10.5em;
+			width: 10.5em;
 		}
 
 		.metric-grid {
@@ -2562,9 +2577,25 @@ input, select, textarea {
 			margin: 0 0.1em;
 		}
 
-		#main > .panel,
-		#main > .panel.intro header {
+		#main > .panel {
 			padding: 2em 1.25em;
+		}
+
+		#main > .panel.intro header {
+			padding: 2em 8.5em 2em 1.25em;
+		}
+
+		#main > .panel.intro .pic {
+			height: 7.4em;
+			width: 7.4em;
+		}
+
+		#main > .panel.intro .pic img {
+			padding: 0.55em 0.4em 0.35em 0.65em;
+		}
+
+		#main > .panel.intro .pic .arrow {
+			display: none;
 		}
 
 		h1 {
